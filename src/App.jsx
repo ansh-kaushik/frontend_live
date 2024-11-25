@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <LiveStream room={"abs"} />
+      <LiveStream room={"obs"} />
     </>
   );
 }
