@@ -1,13 +1,13 @@
 import { useEffect, useRef } from "react";
 import io from "socket.io-client";
 
-// const socket = io("https://backend-live-sr7w.onrender.com:3000", {
-//   transports: ["websocket"], // Ensure WebSocket is used
-// });
-
-const socket = io("http://192.168.0.101:3000", {
+const socket = io("https://backend-live-sr7w.onrender.com", {
   transports: ["websocket"], // Ensure WebSocket is used
 });
+
+// const socket = io("http://192.168.0.101:3000", {
+//   transports: ["websocket"], // Ensure WebSocket is used
+// });
 
 console.log("hi");
 
