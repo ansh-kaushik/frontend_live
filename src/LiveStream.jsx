@@ -20,7 +20,14 @@ const LiveStream = ({ room }) => {
   useEffect(() => {
     // Create PeerConnection
     const pc = new RTCPeerConnection({
-      iceServers: [{ urls: "stun:stun.l.google.com:19302" }],
+      iceServers: [
+        { urls: "stun:stun.l.google.com:19302" },
+        {
+          urls: "turn:relay.metered.ca:80",
+          username: "your-username",
+          credential: "your-credential",
+        },
+      ],
     });
 
     // Save PeerConnection in ref
