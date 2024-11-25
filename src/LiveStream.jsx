@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import io from "socket.io-client";
 
-const socket = io("http://localhost:3000", {
+const socket = io("https://backend-live-sr7w.onrender.com:3000", {
   transports: ["websocket"], // Ensure WebSocket is used
 });
 
